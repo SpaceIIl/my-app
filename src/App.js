@@ -1,7 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 function App() {
+  function Hello(props) {
+    return <h1>Hello World!</h1>;
+  }
+  
+  ReactDOM.render(<Hello />, document.getElementById('root'));
+
   return (
     <div className="App">
       <header className="App-header">
